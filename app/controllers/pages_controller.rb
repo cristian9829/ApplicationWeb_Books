@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
+	layout "mi_layout"
+	
 	def home
-		@age = 20
+
 	end
 end

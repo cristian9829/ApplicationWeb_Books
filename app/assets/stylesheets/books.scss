@@ -2,5 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.book-details { padding: 0 20px 0 40px; }
 
+.comments {
+  .comment-header {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
 
+  .comment-body { font-size: 0.95rem; }
+}

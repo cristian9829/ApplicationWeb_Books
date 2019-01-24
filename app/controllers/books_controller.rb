@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+	before_action :authenticate_user!, except: [:index, :show]
+
 	def index #Index se usa para listar los registros de los libros
 		@books = Book.all
 	end
@@ -8,7 +10,7 @@ class BooksController < ApplicationController
 	end
 
 	def new
-  	@book = Book.new
+  		@book = Book.new
 	end
 
 	def create

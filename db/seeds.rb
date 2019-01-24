@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Book.create(title: "The Pragmatic Programmer:", author: "Andrew Hunt, Dave Thomas", 
+	description: "Illustrates the best practices and major pitfalls of many different aspects of software development", 
+	image_url: "https://images-na.ssl-images-amazon.com/images/I/41BKx1AxQWL._SX396_BO1,204,203,200_.jpg", 
+	publication_date: "10-30-1999", price: 30.96)
+
+Book.create(title: "The Lean Startup", author: "Eric Ries", 
+	description: "Most startups fail. But many of those failures are preventable.", 
+	image_url: "https://images-na.ssl-images-amazon.com/images/I/51N-u8AsmdL.jpg", 
+	publication_date: "09-13-2011", price: 13.99)
+
+
+10.times do |i|
+  Book.create(title: "Book #{i}", author: "Author #{i}", description: "Description #{i}", 
+  	image_url: "http://lorempixel.com/320/460/", publication_date: "01-01-2000", price: 1)
+end
